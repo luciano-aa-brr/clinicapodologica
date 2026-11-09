@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth scroll-pt-20">
+<html lang="es" class="scroll-pt-20">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <meta name="keywords" content="podología temuco, lengua de señas chilena, lsch, clínica podológica inclusiva, uña encarnada, pie diabético temuco, podoseñas">
     <meta name="author" content="KoaLink">
     
-    <!-- Open Graph (Para previsualización en WhatsApp, Facebook, LinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.podosenas.cl/">
     <meta property="og:title" content="PodoSeñas | Podología Clínica en tu lengua">
@@ -34,19 +34,22 @@
     }
     </script>
     
-    <!-- Tailwind CSS (CDN para desarrollo rápido) -->
+    <!-- Archivo CSS Externo -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        medical: {
-                            light: '#e0f2fe',
-                            DEFAULT: '#0284c7',
-                            dark: '#0369a1',
+                        brand: {
+                            blue: '#004B75',   
+                            teal: '#00A490',   
+                            yellow: '#F9C211', 
                         },
-                        koalink: '#BFA2DB'
+                        koalink: '#BFA2DB'     
                     }
                 }
             }
@@ -61,21 +64,21 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <img src="img/logo.jpeg" alt="PodoSeñas Logo" class="h-12 w-12 rounded-full object-cover border-2 border-medical">
-                    <span class="font-bold text-2xl text-slate-700 tracking-tight">Podo<span class="text-medical">Señas</span></span>
+                    <img src="img/logo.jpeg" alt="Logo PodoSeñas" class="h-10 w-auto">
+                    <span class="font-bold text-2xl text-brand-blue tracking-tight">Podo<span class="text-brand-teal">Señas</span></span>
                 </div>
 
                 <!-- Menú Desktop -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-slate-600 hover:text-medical font-medium transition-colors">Inicio</a>
-                    <a href="#servicios" class="text-slate-600 hover:text-medical font-medium transition-colors">Servicios</a>
-                    <a href="#equipo" class="text-slate-600 hover:text-medical font-medium transition-colors">Nuestro Equipo</a>
-                    <a href="#contacto" class="text-slate-600 hover:text-medical font-medium transition-colors">Contacto</a>
+                    <a href="#inicio" class="text-slate-600 hover:text-brand-teal font-medium transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-slate-600 hover:text-brand-teal font-medium transition-colors">Servicios</a>
+                    <a href="#equipo" class="text-slate-600 hover:text-brand-teal font-medium transition-colors">Nuestro Equipo</a>
+                    <a href="#contacto" class="text-slate-600 hover:text-brand-teal font-medium transition-colors">Contacto</a>
                 </nav>
 
                 <!-- Botón CTA Desktop -->
                 <div class="hidden md:flex">
-                    <a href="https://wa.me/56966888378" target="_blank" rel="noopener noreferrer" class="bg-medical hover:bg-medical-dark text-white px-6 py-2.5 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                    <a href="https://wa.me/56987654321" target="_blank" rel="noopener noreferrer" class="bg-brand-blue hover:bg-brand-teal text-white px-6 py-2.5 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                         Agendar Cita
                     </a>
@@ -83,7 +86,7 @@
 
                 <!-- Botón Menú Móvil -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-slate-600 hover:text-medical focus:outline-none p-2">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-brand-teal focus:outline-none p-2">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -94,54 +97,54 @@
 
         <!-- Menú Móvil Desplegable -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 shadow-lg absolute w-full">
-            <a href="#inicio" class="block py-3 text-slate-600 font-medium hover:text-medical border-b border-slate-50">Inicio</a>
-            <a href="#servicios" class="block py-3 text-slate-600 font-medium hover:text-medical border-b border-slate-50">Servicios</a>
-            <a href="#equipo" class="block py-3 text-slate-600 font-medium hover:text-medical border-b border-slate-50">Nuestro Equipo</a>
-            <a href="#contacto" class="block py-3 text-slate-600 font-medium hover:text-medical border-b border-slate-50">Contacto</a>
-            <a href="https://wa.me/56987654321" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center bg-medical text-white py-3 rounded-lg font-semibold">
+            <a href="#inicio" class="block py-3 text-slate-600 font-medium hover:text-brand-teal border-b border-slate-50">Inicio</a>
+            <a href="#servicios" class="block py-3 text-slate-600 font-medium hover:text-brand-teal border-b border-slate-50">Servicios</a>
+            <a href="#equipo" class="block py-3 text-slate-600 font-medium hover:text-brand-teal border-b border-slate-50">Nuestro Equipo</a>
+            <a href="#contacto" class="block py-3 text-slate-600 font-medium hover:text-brand-teal border-b border-slate-50">Contacto</a>
+            <a href="https://wa.me/56966888378 " target="_blank" rel="noopener noreferrer" class="mt-4 block text-center bg-brand-blue text-white py-3 rounded-lg font-semibold">
                 Agendar por WhatsApp
             </a>
         </div>
     </header>
 
-    <!-- CONTENEDOR PRINCIPAL: Ahora envuelve TODO el contenido (Inicio y Servicios) -->
+    <!-- CONTENEDOR PRINCIPAL -->
     <main class="flex-grow">
         
         <!-- 2. SECCIÓN HERO -->
-        <section id="inicio" class="relative bg-medical-light overflow-hidden min-h-[calc(100vh-5rem)] flex items-center justify-center">
+        <section id="inicio" class="relative bg-slate-100 overflow-hidden min-h-[calc(100dvh-80px)] flex items-center justify-center">
             <div class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center text-center">
                 <div class="space-y-8 z-10 relative flex flex-col items-center">
                     
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-medical-dark font-medium text-sm shadow-sm border border-sky-100">
-                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-brand-blue font-medium text-sm shadow-sm border border-brand-teal/30">
+                        <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
                         Clínica Inclusiva en Temuco
                     </div>
                     
-                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-slate-900 leading-tight">
+                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-brand-blue leading-tight">
                         Cuidado integral de tus pies.
                     </h1>
                     
-                    <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
                         Podología clínica especializada en Lengua de Señas Chilena (LSCh). Eliminamos las barreras de comunicación para que recibas atención segura y entiendas cada parte de tu tratamiento.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center w-full">
-                        <a href="https://wa.me/56987654321" target="_blank" rel="noopener noreferrer" class="bg-medical hover:bg-medical-dark text-white px-8 py-4 rounded-xl font-bold text-lg text-center transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                        <a href="https://wa.me/56987654321" target="_blank" rel="noopener noreferrer" class="bg-brand-blue hover:bg-brand-teal text-white px-8 py-4 rounded-xl font-bold text-lg text-center transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
                             Videollamada o Texto
                         </a>
-                        <a href="#servicios" class="bg-white text-slate-700 hover:text-medical border border-slate-200 hover:border-medical px-8 py-4 rounded-xl font-bold text-lg text-center transition-all shadow-sm hover:bg-slate-50">
+                        <a href="#servicios" class="bg-white text-brand-blue hover:text-brand-teal border border-slate-200 hover:border-brand-teal px-8 py-4 rounded-xl font-bold text-lg text-center transition-all shadow-sm hover:bg-slate-50">
                             Ver Tratamientos
                         </a>
                     </div>
                     
-                    <div class="flex items-center justify-center gap-8 pt-8 border-t border-sky-200/60 mt-8 w-full max-w-md">
+                    <div class="flex items-center justify-center gap-8 pt-8 border-t border-brand-teal/20 mt-8 w-full max-w-md">
                         <div class="flex flex-col items-center">
-                            <span class="font-bold text-2xl md:text-3xl text-slate-800">100%</span>
+                            <span class="font-bold text-2xl md:text-3xl text-brand-blue">100%</span>
                             <span class="text-sm text-slate-500 font-medium">Atención en LSCh</span>
                         </div>
-                        <div class="w-px h-10 bg-sky-200/60"></div>
+                        <div class="w-px h-10 bg-brand-teal/20"></div>
                         <div class="flex flex-col items-center">
-                            <span class="font-bold text-2xl md:text-3xl text-slate-800">SIS</span>
+                            <span class="font-bold text-2xl md:text-3xl text-brand-blue">SIS</span>
                             <span class="text-sm text-slate-500 font-medium">Registro Sanitario</span>
                         </div>
                     </div>
@@ -154,7 +157,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">
                         Nuestros Tratamientos
                     </h2>
                     <p class="text-lg text-slate-600">
@@ -164,74 +167,79 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
+                    <!-- Tarjeta 1: Podología General -->
                     <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
-                        <div class="w-14 h-14 bg-sky-100 text-medical rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-slate-200 text-brand-teal rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Podología Clínica General</h3>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Podología Clínica General</h3>
                         <p class="text-slate-600 mb-6 flex-grow">
                             Sesión base que incluye evaluación inicial, corte terapéutico de uñas, pulido, deslaminado de callosidades, exfoliación e hidratación.
                         </p>
                         <div class="flex items-center justify-between text-sm font-medium text-slate-500 border-t border-slate-200 pt-4 mt-auto">
                             <span class="flex items-center gap-1" title="Incluye tiempo de comunicación en LSCh"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 60 min</span>
-                            <span class="text-medical font-bold text-base">Ref: $20.000</span>
+                            <span class="text-brand-teal font-bold text-base">Ref: $20.000</span>
                         </div>
                     </div>
 
+                    <!-- Tarjeta 2: Uña Encarnada -->
                     <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
-                        <div class="w-14 h-14 bg-sky-100 text-medical rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-slate-200 text-brand-teal rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Uña Encarnada (Onicocriptosis)</h3>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Uña Encarnada (Onicocriptosis)</h3>
                         <p class="text-slate-600 mb-6 flex-grow">
                             Abordaje conservador en etapas iniciales (limpieza, ortesis o braces) y espiculotomía en casos que lo requieran, con curaciones de seguimiento.
                         </p>
                         <div class="flex items-center justify-end text-sm font-medium text-slate-500 border-t border-slate-200 pt-4 mt-auto">
-                            <span class="text-medical font-bold text-base">Desde $25.000</span>
+                            <span class="text-brand-teal font-bold text-base">Desde $25.000</span>
                         </div>
                     </div>
 
+                    <!-- Tarjeta 3: Pie Diabético -->
                     <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
-                        <div class="w-14 h-14 bg-sky-100 text-medical rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 bg-slate-200 text-brand-teal rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Evaluación de Pie Diabético</h3>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Evaluación de Pie Diabético</h3>
                         <p class="text-slate-600 mb-6 flex-grow">
                             Inspección dermatológica y vascular, test de sensibilidad con monofilamento, evaluación del calzado y plan de prevención de úlceras.
                         </p>
                         <div class="flex items-center justify-between text-sm font-medium text-slate-500 border-t border-slate-200 pt-4 mt-auto">
                             <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 60 min</span>
-                            <span class="text-medical font-bold text-base">Ref: $30.000</span>
+                            <span class="text-brand-teal font-bold text-base">Ref: $30.000</span>
                         </div>
                     </div>
 
+                    <!-- Tarjeta 4: Otros Servicios -->
                     <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow md:col-span-2 lg:col-span-3 mt-4">
-                        <h3 class="text-xl font-bold text-slate-900 mb-6">Otros Servicios, Plantillas y Autocuidado</h3>
+                        <h3 class="text-xl font-bold text-brand-blue mb-6">Otros Servicios, Plantillas y Autocuidado</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             <div class="flex flex-col p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
                                 <span class="font-bold text-slate-800">Verrugas Plantares</span>
-                                <span class="text-sm text-medical font-bold mt-1">Desde $25.000</span>
+                                <span class="text-sm text-brand-teal font-bold mt-1">Desde $25.000</span>
                             </div>
                             <div class="flex flex-col p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
                                 <span class="font-bold text-slate-800">Ortesis de Silicona</span>
-                                <span class="text-sm text-medical font-bold mt-1">Desde $35.000</span>
+                                <span class="text-sm text-brand-teal font-bold mt-1">Desde $35.000</span>
                             </div>
                             <div class="flex flex-col p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
                                 <span class="font-bold text-slate-800">Estudio y Plantillas</span>
-                                <span class="text-sm text-medical font-bold mt-1">Desde $60.000</span>
+                                <span class="text-sm text-brand-teal font-bold mt-1">Desde $60.000</span>
                             </div>
                             <div class="flex flex-col p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
                                 <span class="font-bold text-slate-800">Tratamiento de Hongos</span>
-                                <span class="text-sm text-medical font-bold mt-1">Desde $22.000</span>
+                                <span class="text-sm text-brand-teal font-bold mt-1">Desde $22.000</span>
                             </div>
                         </div>
                         
-                        <div class="mt-6 bg-medical-light/50 border border-medical/20 rounded-xl p-4 flex items-start sm:items-center gap-4">
-                            <div class="p-2 bg-white rounded-lg text-medical">
+                        <!-- Banner de Talleres -->
+                        <div class="mt-6 bg-slate-100 border border-brand-teal/20 rounded-xl p-4 flex items-start sm:items-center gap-4">
+                            <div class="p-2 bg-white rounded-lg text-brand-teal">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Talleres de Autocuidado</h4>
+                                <h4 class="font-bold text-brand-blue">Talleres de Autocuidado</h4>
                                 <p class="text-sm text-slate-600 mt-1">Realizamos talleres de autocuidado podológico íntegramente en LSCh para grupos y comunidades sordas.</p>
                             </div>
                         </div>
@@ -244,9 +252,8 @@
         <section id="equipo" class="py-16 md:py-24 bg-slate-50 border-t border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <!-- Encabezado de Equipo -->
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">
                         Nuestro Equipo Clínico
                     </h2>
                     <p class="text-lg text-slate-600">
@@ -255,81 +262,130 @@
                 </div>
 
                 <!-- Grilla de Profesionales -->
-                <!-- Usamos flex con wrap y justify-center para que las 5 tarjetas queden balanceadas -->
                 <div class="flex flex-wrap justify-center gap-8 mb-24">
                     
-                    <!-- Camila Cabrera (Directora Técnica) -->
                     <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow text-center w-full sm:w-72">
-                        <div class="w-24 h-24 mx-auto bg-medical-light rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
-                            <img src="https://ui-avatars.com/api/?name=Camila+Cabrera&background=0284c7&color=fff&size=150" alt="Camila Cabrera" class="w-full h-full object-cover">
+                        <div class="w-24 h-24 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
+                            <img src="https://ui-avatars.com/api/?name=Camila+Cabrera&background=004B75&color=fff&size=150" alt="Camila Cabrera" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900">Camila Cabrera</h3>
-                        <p class="text-medical font-semibold text-sm mb-1">Directora Técnica</p>
+                        <h3 class="text-xl font-bold text-brand-blue">Camila Cabrera</h3>
+                        <p class="text-brand-teal font-semibold text-sm mb-1">Directora Técnica</p>
                         <p class="text-slate-500 text-sm mb-4">Podóloga Clínica TENS</p>
-                        <div class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-100">
+                        <div class="inline-flex items-center gap-1 bg-green-50 text-brand-teal px-3 py-1 rounded-full text-xs font-bold border border-green-100">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             Formación LSCh
                         </div>
                     </div>
 
-                    <!-- Paulina Moya -->
                     <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow text-center w-full sm:w-72">
-                        <div class="w-24 h-24 mx-auto bg-medical-light rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
+                        <div class="w-24 h-24 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
                             <img src="https://ui-avatars.com/api/?name=Paulina+Moya&background=e2e8f0&color=475569&size=150" alt="Paulina Moya" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900">Paulina Moya</h3>
+                        <h3 class="text-xl font-bold text-brand-blue">Paulina Moya</h3>
                         <p class="text-slate-500 text-sm mb-4 mt-2">Podóloga Clínica TENS</p>
-                        <div class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-100">
+                        <div class="inline-flex items-center gap-1 bg-green-50 text-brand-teal px-3 py-1 rounded-full text-xs font-bold border border-green-100">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             Formación LSCh
                         </div>
                     </div>
 
-                    <!-- Renato Muzzio -->
                     <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow text-center w-full sm:w-72">
-                        <div class="w-24 h-24 mx-auto bg-medical-light rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
+                        <div class="w-24 h-24 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
                             <img src="https://ui-avatars.com/api/?name=Renato+Muzzio&background=e2e8f0&color=475569&size=150" alt="Renato Muzzio" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900">Renato Muzzio</h3>
+                        <h3 class="text-xl font-bold text-brand-blue">Renato Muzzio</h3>
                         <p class="text-slate-500 text-sm mb-4 mt-2">Podólogo Clínico TENS</p>
-                        <div class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-100">
+                        <div class="inline-flex items-center gap-1 bg-green-50 text-brand-teal px-3 py-1 rounded-full text-xs font-bold border border-green-100">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             Formación LSCh
                         </div>
                     </div>
 
-                    <!-- Macarena Garcés -->
                     <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow text-center w-full sm:w-72">
-                        <div class="w-24 h-24 mx-auto bg-medical-light rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
+                        <div class="w-24 h-24 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
                             <img src="https://ui-avatars.com/api/?name=Macarena+Garcés&background=e2e8f0&color=475569&size=150" alt="Macarena Garcés" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900">Macarena Garcés</h3>
+                        <h3 class="text-xl font-bold text-brand-blue">Macarena Garcés</h3>
                         <p class="text-slate-500 text-sm mb-4 mt-2">Podóloga Clínica TENS</p>
-                        <div class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-100">
+                        <div class="inline-flex items-center gap-1 bg-green-50 text-brand-teal px-3 py-1 rounded-full text-xs font-bold border border-green-100">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             Formación LSCh
                         </div>
                     </div>
 
-                    <!-- Rut Mancilla -->
                     <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow text-center w-full sm:w-72">
-                        <div class="w-24 h-24 mx-auto bg-medical-light rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
+                        <div class="w-24 h-24 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-sm">
                             <img src="https://ui-avatars.com/api/?name=Rut+Mancilla&background=e2e8f0&color=475569&size=150" alt="Rut Mancilla" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900">Rut Mancilla</h3>
+                        <h3 class="text-xl font-bold text-brand-blue">Rut Mancilla</h3>
                         <p class="text-slate-500 text-sm mb-4 mt-2">Podóloga Clínica TENS</p>
-                        <div class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-100">
+                        <div class="inline-flex items-center gap-1 bg-green-50 text-brand-teal px-3 py-1 rounded-full text-xs font-bold border border-green-100">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             Formación LSCh
-        
-    </main>
+                        </div>
+                    </div>
 
-    <!-- 5. SECCIÓN CONTACTO Y AGENDAMIENTO -->
+                </div>
+
+                <!-- Bloque de Bioseguridad y Esterilización -->
+                <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm max-w-5xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-center">
+                        
+                        <div class="md:w-1/2 space-y-6">
+                            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 text-brand-teal font-bold text-sm border border-slate-200">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                Protocolos de Bioseguridad
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold text-brand-blue">
+                                Tu seguridad y confianza son nuestra prioridad
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Garantizamos un entorno clínico estéril y transparente. Cada box clínico cuenta con iluminación óptima y favorece el contacto visual directo. Te avisamos con señales visuales antes de usar instrumental que pueda sorprenderte.
+                            </p>
+                        </div>
+
+                        <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                            <div class="space-y-2">
+                                <div class="w-10 h-10 bg-slate-100 text-brand-teal rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                                </div>
+                                <h4 class="font-bold text-brand-blue">Autoclave Clase B</h4>
+                                <p class="text-sm text-slate-500">Esterilización de grado médico con control de ciclos y registro de trazabilidad.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="w-10 h-10 bg-slate-100 text-brand-teal rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                                </div>
+                                <h4 class="font-bold text-brand-blue">Transparencia Visual</h4>
+                                <p class="text-sm text-slate-500">El instrumental se abre frente a ti, explicando cada paso en LSCh antes de comenzar.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="w-10 h-10 bg-slate-100 text-brand-teal rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                                </div>
+                                <h4 class="font-bold text-brand-blue">Material Desechable</h4>
+                                <p class="text-sm text-slate-500">Uso estricto de hojas de bisturí, gasas y campos de un solo uso por paciente.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="w-10 h-10 bg-slate-100 text-brand-teal rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                                </div>
+                                <h4 class="font-bold text-brand-blue">Desinfección de Box</h4>
+                                <p class="text-sm text-slate-500">Limpieza y desinfección profunda del sillón y el gabinete entre cada atención.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. SECCIÓN CONTACTO Y AGENDAMIENTO -->
         <section id="contacto" class="py-16 md:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">
                         Agenda tu Evaluación
                     </h2>
                     <p class="text-lg text-slate-600">
@@ -343,14 +399,14 @@
                     <div class="space-y-8">
                         
                         <!-- Tarjeta WhatsApp (Prioridad LSCh) -->
-                        <div class="bg-medical-light/30 border border-medical/20 rounded-2xl p-6 flex items-start gap-4">
-                            <div class="w-12 h-12 bg-green-500 text-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <div class="bg-brand-teal/10 border border-brand-teal/20 rounded-2xl p-6 flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-teal text-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-lg">WhatsApp Oficial</h4>
+                                <h4 class="font-bold text-brand-blue text-lg">WhatsApp Oficial</h4>
                                 <p class="text-slate-600 text-sm mt-1">Atención por texto y videollamadas en LSCh.</p>
-                                <a href="https://wa.me/56966888378" target="_blank" rel="noopener noreferrer" class="text-medical font-bold hover:underline mt-2 inline-block">+56 9 6688 8378</a>
+                                <a href="https://wa.me/56966888378" target="_blank" rel="noopener noreferrer" class="text-brand-teal font-bold hover:underline mt-2 inline-block">+56 9 6688 8378</a>
                             </div>
                         </div>
 
@@ -360,7 +416,7 @@
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-lg">Ubicación</h4>
+                                <h4 class="font-bold text-brand-blue text-lg">Ubicación</h4>
                                 <p class="text-slate-600 mt-1">Calle Balmaceda 123, Oficina 402, Temuco.</p>
                                 <p class="text-sm text-slate-500 mt-1">A pasos de Plaza Teodoro Schmidt. Edificio con ascensor y acceso universal.</p>
                             </div>
@@ -372,7 +428,7 @@
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-lg">Horario de Atención</h4>
+                                <h4 class="font-bold text-brand-blue text-lg">Horario de Atención</h4>
                                 <ul class="text-slate-600 mt-1 space-y-1">
                                     <li>Lunes a Viernes: <span class="font-medium">09:00 a 19:00 hrs</span></li>
                                     <li>Sábados: <span class="font-medium">09:00 a 14:00 hrs</span></li>
@@ -396,17 +452,17 @@
 
                     <!-- Columna 2: Formulario de Agendamiento -->
                     <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Solicita tu hora aquí</h3>
+                        <h3 class="text-2xl font-bold text-brand-blue mb-6">Solicita tu hora aquí</h3>
                         
                         <form id="reserva-form" class="space-y-5">
                             <div>
                                 <label for="nombre" class="block text-sm font-medium text-slate-700 mb-1">Nombre completo</label>
-                                <input type="text" id="nombre" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-medical focus:border-medical outline-none transition-colors" placeholder="Ej: Juan Pérez">
+                                <input type="text" id="nombre" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition-colors" placeholder="Ej: Matias Cerna">
                             </div>
 
                             <div>
                                 <label for="servicio" class="block text-sm font-medium text-slate-700 mb-1">¿Qué atención necesitas?</label>
-                                <select id="servicio" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-medical focus:border-medical outline-none transition-colors bg-white">
+                                <select id="servicio" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition-colors bg-white">
                                     <option value="" disabled selected>Selecciona un tratamiento...</option>
                                     <option value="Podología Clínica General">Podología Clínica General</option>
                                     <option value="Evaluación Uña Encarnada">Uña Encarnada (Onicocriptosis)</option>
@@ -420,11 +476,11 @@
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
                                     <label for="fecha" class="block text-sm font-medium text-slate-700 mb-1">Fecha preferente</label>
-                                    <input type="date" id="fecha" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-medical focus:border-medical outline-none transition-colors">
+                                    <input type="date" id="fecha" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition-colors">
                                 </div>
                                 <div>
                                     <label for="jornada" class="block text-sm font-medium text-slate-700 mb-1">Jornada</label>
-                                    <select id="jornada" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-medical focus:border-medical outline-none transition-colors bg-white">
+                                    <select id="jornada" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition-colors bg-white">
                                         <option value="Mañana (09:00 - 13:00)">Mañana</option>
                                         <option value="Tarde (14:00 - 19:00)">Tarde</option>
                                     </select>
@@ -435,7 +491,7 @@
                                 Al enviar, se abrirá WhatsApp con los datos de tu reserva para que nuestro equipo te confirme la disponibilidad.
                             </p>
 
-                            <button type="submit" class="w-full bg-medical hover:bg-medical-dark text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2">
+                            <button type="submit" class="w-full bg-brand-blue hover:bg-brand-teal text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                                 Enviar Solicitud
                             </button>
@@ -446,8 +502,10 @@
             </div>
         </section>
 
+    </main>
+
     <!-- FOOTER CON FIRMA KOALINK -->
-    <footer class="bg-slate-900 text-slate-300 py-6 border-t border-slate-800 mt-auto">
+    <footer class="bg-brand-blue text-slate-300 py-6 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-sm text-center md:text-left">
                 &copy; 2026 PodoSeñas Clínica Podológica. Todos los derechos reservados.
@@ -462,55 +520,7 @@
         </div>
     </footer>
 
-    <!-- Script de Navegación y Menú Móvil -->
-    <script>
-        const btn = document.getElementById('mobile-menu-button');
-        const menu = document.getElementById('mobile-menu');
-        const mobileLinks = menu.querySelectorAll('a');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
-
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                header.classList.add('shadow-md', 'bg-white/95', 'backdrop-blur-sm');
-                header.classList.remove('shadow-sm', 'bg-white');
-            } else {
-                header.classList.add('shadow-sm', 'bg-white');
-                header.classList.remove('shadow-md', 'bg-white/95', 'backdrop-blur-sm');
-            }
-        // Lógica del Formulario de Reserva hacia WhatsApp
-        document.getElementById('reserva-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página se recargue
-
-            // Capturar los valores del formulario de forma segura
-            const nombre = document.getElementById('nombre').value.trim();
-            const servicio = document.getElementById('servicio').value;
-            const fecha = document.getElementById('fecha').value;
-            const jornada = document.getElementById('jornada').value;
-
-            // Formatear el mensaje
-            const mensaje = `Hola PodoSeñas, mi nombre es *${nombre}*. Me gustaría consultar disponibilidad para una atención de *${servicio}*.\n\nTengo preferencia para la fecha: *${fecha}* durante la *${jornada}*.\n\nQuedo atento(a).`;
-
-            // Codificar el texto para la URL de WhatsApp
-            const textoCodificado = encodeURIComponent(mensaje);
-            
-            // Número de la clínica (sin el +)
-            const numeroClínica = "56966888378";
-
-            // Abrir WhatsApp en una nueva pestaña
-            window.open(`https://wa.me/${numeroClínica}?text=${textoCodificado}`, '_blank', 'noopener,noreferrer');
-        });
-        
-        });
-    </script>
+    <!-- Enlace al archivo JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
