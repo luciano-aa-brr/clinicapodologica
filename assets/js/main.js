@@ -39,7 +39,7 @@ document.getElementById('reserva-form').addEventListener('submit', function(e) {
     const mensaje = `Hola PodoSeñas, mi nombre es *${nombre}*. Me gustaría consultar disponibilidad para una atención de *${servicio}*.\n\nTengo preferencia para la fecha: *${fecha}* durante la *${jornada}*.\n\nQuedo atento(a).`;
 
     const textoCodificado = encodeURIComponent(mensaje);
-    const numeroClínica = "56966888378";
+    const numeroClínica = "56935331804";
 
     window.open(`https://wa.me/${numeroClínica}?text=${textoCodificado}`, '_blank', 'noopener,noreferrer');
 });
